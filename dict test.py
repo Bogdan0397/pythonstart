@@ -23,3 +23,5 @@ def give_change(amount):
 
 print(give_change(365))
 print(give_change(365))
+print(give_change(365))
+print(give_change(365))
