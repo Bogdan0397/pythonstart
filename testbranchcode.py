@@ -9,3 +9,4 @@ print(lst_sum(list(map(int, input().split()))))
 
 print("TEST"*100)
 print("HI")
+print("1 more test")
