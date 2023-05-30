@@ -6,3 +6,5 @@ def lst_sum(l):
 
 
 print(lst_sum(list(map(int, input().split()))))
+
+print("TEST"*100)
