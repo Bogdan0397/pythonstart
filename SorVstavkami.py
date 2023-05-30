@@ -1,14 +1,14 @@
-#https://www.youtube.com/watch?v=jMWvNTp_wFA&ab_channel=selfedu
+d = [1, 2, [True, False], ["Москва", "Уфа", [100, 101], ['True', [-2, -1]]], 7.89]
 
-a = [-3,1,5,-2,10,-20]
+# здесь продолжайте программу
 
-N = len(a)
-
-for i in range(1,N):
-    for j in range(i,0,-1):
-        if a[j]<a[j-1]:
-            a[j],a[j-1]=a[j-1],a[j]
+def get_line_list(d,a=[]):
+    for i in d:
+        if isinstance(i,list):
+            get_line_list(i)
         else:
-            break
+            a.append(i)
 
-print(*a)
+    return a
+
+print(get_line_list(d))
