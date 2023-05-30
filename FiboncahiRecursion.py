@@ -10,5 +10,3 @@ def fib_rec(N,f=[1,1]):
     print(f)
 
 print(fib_rec(6))
-print(fib_rec(6))
-print(fib_rec(6))
